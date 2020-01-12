@@ -7,34 +7,17 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://kit.fontawesome.com/91cd239104.js" crossorigin="anonymous"></script>
     <title>Hello, world!</title>
-    <style>
-      .cover{
-        background:url(./image/board.jpg);
-        background-size:cover;
-        background-position:center center;
-      }
-      .color-winered{
-        color:#80273F;
-      }
-      @font-face {
-        font-family: 'Senobi=Gothic';
-        src:url('./font/Senobi-Gothic/Senobi-Gothic-Regular.ttf') format('TrueType');
-      }
-      .SenobiGothic{
-        font-family: 'Senobi=Gothic';
-      }
-      .nav-bg{
-        background-color:rgba(15, 194, 226, 0.86) ;
-      }
-    </style>
+    <link rel="stylesheet" href="stylesheet.min.css">
   </head>
-  <body style="background-color:rgb(224, 220, 199)">
+  <body style="background-color:rgb(235, 232, 232)">
     <header>
       <nav class="navbar sticky-top navbar-expand-lg navbar-light nav-bg shadow">
         <a class="navbar-brand SenobiGothic" style="font-size:24px;"href="#">木 村  哲 朗</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -43,62 +26,102 @@
             <li class="nav-item active">
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
+                Sections
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+              <div class="dropdown-menu" style="background-color:rgba(103, 206, 224, 0.7)!important;" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#introduction">Introduction</a>
+                <a class="dropdown-item" href="#works">My Works</a>
+                <a class="dropdown-item" href="#request">Request</a>
               </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
             </li>
           </ul>
         </div>
       </nav>
+      <div class="">
+        <img src="./image/head2.png" class="w-100 d-lg-none mx-auto">
+        <img src="./image/head2.png" class="container w-100 d-none d-lg-block mx-auto">
+      </div>
       <div class="container text-center">
-        <img src="./image/head2.png" style="width:100%"class="mx-auto">
-        <p class="mt-2 display-4 d-none d-md-block"><span style="color:rgb(198, 0, 59)">Welcome to</span> <span style="color:rgb(0, 215, 144)">My Portfolio</span></p>
-        <p class="mt-2 display-4 d-md-none" style="color:rgb(198, 0, 59)">Welcome to</p>
-        <p class="mt-2 display-4 d-md-none" style="color:rgb(0, 215, 144)">My Portfolio</p>
+
+        <p class="mt-2 display-4 d-none d-md-block"><span style="color:rgb(201, 96, 127)">Welcome to</span> <span style="color:rgb(85, 204, 164)">My Portfolio</span></p>
+        <p class="mt-2 display-4 d-md-none" style="color:rgb(201, 96, 127)">Welcome to</p>
+        <p class="mt-2 display-4 d-md-none" style="color:rgb(85, 204, 164)">My Portfolio</p>
 
       </div>
     </header>
     <main>
-      <section>
+      <section id="introduction">
         <div class="container mt-5">
           <h2 class="SenobiGothic pb-2 border-light" style="border-bottom:3px solid #fff">Introduction</h2>
-          <div class="Introduction">
-            <p>introduction</p>
+          <div class="Introduction px-2 IPAexm">
+            <h3 class="border-bottom border-dark mt-4">ご挨拶</h3>
+            <div class="sentece px-2" style="font-size:20px">
+              <p>初めまして　木村哲朗と申します</p>
+              <p>このページを見つけていただきありがとうございます</p>
+              <p>面白いページ作りを目標に日々精進いたします所存でございます</p>
+              <p>是非ご覧ください</p>
+              <p></p>
+
+            </div>
+            <h3 class="border-bottom border-dark mt-4">自己紹介</h3>
+            <div class="sentece px-2" style="font-size:20px">
+              <ul class="profile">
+                <li>名前:木村哲朗(きむらてつろう)</li>
+                <li>年齢:20歳</li>
+                <li>出身地:岐阜県大垣市<i class="fas fa-chevron-circle-down"></i></li>
+                <div class="ggmap">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3253.5514131136215!2d136.61563721481727!3d35.36677748026884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6003b162213027d1%3A0x916dad43dff86f3e!2z5aSn5Z6j6aeF!5e0!3m2!1sja!2sjp!4v1578847759167!5m2!1sja!2sjp" width="500" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+                <li>特技:ダンス(ロック アニメーション) プログラミング　絵　ギター　モノマネ</li>
+              </ul>
+
+            </div>
           </div>
         </div>
       </section>
-      <section>
+      <section id="works">
         <div class="container mt-5">
           <h2 class="SenobiGothic pb-2 border-light" style="border-bottom:3px solid #fff">My Works</h2>
           <div class="works row">
             <div class="col">
               <img src="">
               <p>name</p>
-              
+
             </div>
           </div>
         </div>
       </section>
-    </main>
-    <footer>
+      <section id="request">
+        <div class="container mt-5">
+          <h2 class="SenobiGothic pb-2 border-light" style="border-bottom:3px solid #fff">Request</h2>
 
+        </div>
+      </section>
+    </main>
+    <footer class="text-center text-muted text-white py-4" style="background-color:rgb(69, 69, 69);">
+      <section>
+        <div class="container">
+          <ul class="py-3">
+            <li>
+              <a href="https://twitter.com/tettettet22?ref_src=twsrc%5Etfw" target="_blank"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/kmrntzr" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/kmr_n_tzr" target="_blank" >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      Copyright © 2020- TETSURO KIMURA. All Rights Reserved.
     </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
