@@ -1,3 +1,5 @@
+$color-chevron:rgba(168, 168, 168, 0.7);
+
 .cover{
   background:url(./image/board.jpg);
   background-size:cover;
@@ -34,10 +36,11 @@
     margin-bottom:10px
   }
 }
-.fa-chevron-circle-up{
-  &:active{
-    transform: rotate(180deg);
-    transition: transform .5s
+.fa-chevron-circle-down{
+  color:$color-chevron;
+  &:hover{
+    cursor:pointer;
+    color:darken($color-chevron, 10%)
   }
 }
 .ggmap {
@@ -51,6 +54,10 @@ display: none;
 
 }
 
+.dance-insta{
+  display: none;
+}
+
 .ggmap iframe,
 .ggmap object,
 .ggmap embed {
@@ -60,6 +67,88 @@ left: 0;
 width: 100%;
 height: 100%;
 }
+
+.lang-col{
+  border-bottom: 1px solid rgb(182, 182, 182);
+  margin:20px auto;
+  padding-bottom:2.0rem;
+  ul{
+    width:100%;
+    margin:0 auto;
+  }
+}
+.language{
+  font-size: 30px;
+  text-align: center;
+}
+
+.carousel-img-wrapper{
+  background: radial-gradient(#ee99d9, #170d87);
+  overflow: hidden;
+  img{
+    opacity: 0.6;
+    transition:0.4s;
+    &:hover{
+      opacity:0.9;
+      transform: scale(1.05);
+      transition: 0.4s;
+    }
+  }
+}
+
+.policy{
+  font-size:20px;
+  .policy-title{
+    font-size:28px;
+  }
+  .col{
+    margin: 2.0rem auto;
+    border-bottom: 1px solid rgb(181, 181, 181)
+  }
+  .icon{
+    font-size:50px
+  }
+
+}
+
+.rhombus {
+  left: 0;
+  right: 0;
+  width: 190px;
+  height: 190px;
+  margin: auto;
+  border:2px solid rgb(212, 81, 167);
+  transform: rotate(45deg);
+  overflow: hidden;
+  .rhom-inner{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background: transparent;
+    transform: rotate(-45deg);
+    padding:30% 0;
+    .request-title{
+      font-size:22px;
+
+    }
+  }
+}
+
+@media screen and (min-width:768px){
+  .rhombus{
+    width:250px;
+    height:250px;
+    .rhom-inner{
+      p{
+        font-size:20px
+      }
+      .request-title{
+        font-size:25px;
+      }
+    }
+  }
+}
+
 footer{
   ul{
     list-style: none;
@@ -86,8 +175,16 @@ footer{
   .fa-instagram{
     &:hover{
       color: #CF2E92;
-
     }
   }
 
+}
+.effect-fade{
+  opacity:0;
+  transform: translateY(50px);
+  transition: all 500ms;
+}
+.effect-scroll{
+  opacity: 1;
+  transform: translateY(0px);
 }
